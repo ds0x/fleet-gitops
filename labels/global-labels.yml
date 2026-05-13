@@ -1,6 +1,14 @@
 - name: Department - Engineering
   description: Hosts belonging to members of the Engineering department
-  label_membership: host_vitals
+  label_membership_type: host_vitals
+  criteria:
+    vital: end_user_idp_department
+    value: Engineering
+- name: Uptime over 30 days
+  platform: darwin
+  description: Hosts belonging to members of the Engineering department
+  label_membership_type: dynamic
+  query: SELECT 1 FROM uptime WHERE days > 30
   criteria:
     vital: end_user_idp_department
     value: Engineering
