@@ -17,6 +17,10 @@ org_settings:
   host_expiry_settings:
     host_expiry_enabled: true
     host_expiry_window: 90
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: $WEBHOOK_URL
   org_info:
     ###########################################################
     # The name of your organization is displayed to end users
