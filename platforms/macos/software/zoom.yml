@@ -1,0 +1,6 @@
+software:
+  packages:
+    - path: ../platforms/macos/software/zoom.yml
+      self_service: true
+  post_install_script:
+    path: ../scripts/zoom-config.sh
